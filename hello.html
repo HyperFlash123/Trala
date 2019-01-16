@@ -1,0 +1,324 @@
+<html>
+<head>
+<style>
+body
+{
+background-color:tan;
+}
+h1
+{
+display:block;
+}
+.container{
+display:flex;
+}
+.fixed{
+width:500px;
+}
+.flex-item{
+flex-grow:1;
+}
+.box
+{
+background-color:#3d4543;
+height:450px;
+width:300px;
+border-radius:10px;
+position:relative;
+top:80px;
+left:70%;
+}
+.box1
+{
+background-color:white;
+height:450px;
+width:300px;
+border-radius:10px;
+position:relative;
+top:60px;
+left:30%;
+}
+.display
+{
+background-color:#222;
+width:220px;
+position:relative;
+left:15px;
+top:20px;
+height:40px;
+}
+.display1
+{
+background-color:white;
+width:220px;
+position:relative;
+left:15px;
+top:20px;
+height:40px;
+}
+.display input
+{
+position:relative;
+left:2px;
+top:2px;
+height:35px;
+color:black;
+background-color:#bccd95;
+font-size:21px;
+text-align:right;
+}
+.keys
+{
+position:relative;
+top:15px;
+}
+
+.text
+{
+width:120px;
+}
+.button
+{
+width:40px;
+height:30px;
+border:none;
+border-radius:8px;
+margin-left:28px;
+cursor:pointer;
+border-top:2px solid transparent;
+}
+.button.gray
+{
+color:white;
+background-color:#6f6f6f;
+border-bottom:black 2px solid;
+border-top:2px #6f6f6f solid;
+}
+.button.pink
+{
+color:black;
+background-color:#ff4561;
+border-bottom:black 2px solid;
+}
+.button.black
+{
+color:white;
+background-color:303030;
+border-bottom:black 2px solid;
+border-top:2px 303030 solid;
+}
+.button.orange
+{
+width:120px;
+color:black;
+margin-left:35%;
+background-color:#FF9933;
+border-bottom:black 2px solid;
+border-top:2px #FF9933 solid;
+}
+.gray:active
+{
+border-top:black 2px solid;
+border-bottom:2px #6f6f6f solid;
+}
+.pink:active
+{
+border-top:black 2px solid;
+border-bottom:#ff4561 2px solid;
+}
+.black:active
+{
+border-top:black 2px solid;
+border-bottom:#303030 2px solid;
+}
+.orange:active
+{
+border-top:black 2px solid;
+border-bottom:FF9933 2px solid;
+}
+p
+{
+line-height:10px;
+}
+</style>
+<script>
+function m3()
+{
+	var text=document.getElementById("d").value;
+	text="cloud";
+	document.getElementById("d").value=text;
+	return true;
+}
+function bb1()
+{
+	var text=document.getElementById("d").value;
+	text="(";
+	document.getElementById("d").value+=text;
+	return true;
+}function bb2()
+{
+	var text=document.getElementById("d").value;
+	text=")";
+	document.getElementById("d").value+=text;
+	return true;
+}function ccb()
+{
+	var text=document.getElementById("d").value;
+	text="";
+	document.getElementById("d").value=text;
+	return true;
+}
+function vbs()
+{
+	var text=document.getElementById("d").value;
+	text="/";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vbp()
+{
+	var text=document.getElementById("d").value;
+	text="+";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vbm()
+{
+	var text=document.getElementById("d").value;
+	text="-";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vba()
+{
+	var text=document.getElementById("d").value;
+	text="*";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb0()
+{
+	var text=document.getElementById("d").value;
+	text="0";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb1()
+{
+	var text=document.getElementById("d").value;
+	text="1";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb2()
+{
+	var text=document.getElementById("d").value;
+	text="2";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb3()
+{
+	var text=document.getElementById("d").value;
+	text="3";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb4()
+{
+	var text=document.getElementById("d").value;
+	text="4";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb5()
+{
+	var text=document.getElementById("d").value;
+	text="5";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb6()
+{
+	var text=document.getElementById("d").value;
+	text="6";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb7()
+{
+	var text=document.getElementById("d").value;
+	text="7";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb8()
+{
+	var text=document.getElementById("d").value;
+	text="8";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vb9()
+{
+	var text=document.getElementById("d").value;
+	text="9";
+	document.getElementById("d").value+=text;
+	return true;
+}
+function vbd()
+{
+	var text=document.getElementById("d").value;
+	text=".";
+	document.getElementById("d").value+=text;
+	return true;
+}
+</script>
+</head>
+<body>
+<div class="container">
+<div class="fixed">
+<div class="box">
+    
+	<div class="display">
+	<form method="POST">
+    <input type="text" name="user_id"   value="SID"/>
+    <br/><br/><br/>
+    <input type="text" name="value"  id="d" value="1+2" /><br/><br/>
+    <input type="Submit" class="button orange" value="ANSWER" /><br/><br/><br/>
+    </form>
+    </div>
+<br/><br/><br/> <br/><br/><br/> 
+	<div class="keys"><br/><form>
+	<p><input type="button" id="mrc" class="button gray" value="mrc" onclick='return m3();'/><input type="button" id="b1" class="button gray" value="(" onclick='return bb1();'/><input type="button" id="b2" class="button gray" 
+
+value=")" onclick='return bb2();'/><input type="button" class="button pink" id="vs" value="/" onclick='return vbs();'/></p>
+		<p><input type="button" id="v7" class="button black" value="7" onclick='return vb7();'/><input type="button" id="v8" class="button black" value="8" onclick='return vb8();'/><input type="button" class="button black" 
+
+id="v9" value="9" onclick='return vb9();'/><input type="button" class="button pink" id="va" value="*" onclick='return vba();'/></p>
+		<p><input type="button" class="button black" value="4" id="v4" onclick='return vb4();'/><input type="button" class="button black" value="5" id="v5" onclick='return vb5();'/><input type="button" class="button black" 
+
+value="6" id="v6" onclick='return vb6();'/><input type="button" class="button pink" value="-" id="vm" onclick='return vbm();'/></p>
+		<p><input type="button" class="button black" id="v1" value="1" onclick='return vb1();'/><input type="button" class="button black" value="2" id="v2" onclick='return vb2();'/><input type="button" class="button black" 
+
+value="3" id="v3" onclick='return vb3();'/><input type="button" class="button pink" value="+" id="vp" onclick='return vbp();'/></p>
+		<p><input type="button" class="button black" value="0" id="v0" onclick='return vb0();'/><input type="button" class="button black" value="."  id="vd" onclick='return vbd();'/><input type="button" class="button black" 
+
+value="C" id="cc" onclick='return ccb();'/></p>
+	</form>
+</div>
+</div>
+</div>
+<div class="flex-item">
+<div class="box1">
+<div class="display1">
+<h3 data-th-text="${value}">this gets replaced</h3>
+<h3 data-th-text="${ans}">this gets replaced</h3>
+<h3>History till now</h3>
+<h3 data-th-text="${his}"><pre>this gets replaced</pre></h3>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
